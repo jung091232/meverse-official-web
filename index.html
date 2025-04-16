@@ -4,11 +4,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meverse - How to Buy</title>
+  <title>Meverse - Unified Hero + Tokenomics + How to Buy</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="how-to-buy">
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#how-to-buy">How to Buy</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="staking.html">Staking</a></li>
+        <li><a href="presale.html">Presale</a></li>
+        <li><a href="referral.html">Referral</a></li>
+        <li><a href="#">Whitepaper</a></li>
+        <li><a href="#footer">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-bg-overlay">
+      <img src="images/memon.png" class="memon" alt="Memon Character" />
+      <h1 class="title">MEMES ARE POWER</h1>
+      <p class="subtitle">수많은 밈들 속에서<br><strong>Memon</strong>이 중심을 지배한다.</p>
+      <a href="presale.html" class="cta-button">Join the Presale</a>
+    </div>
+  </section>
+
+  <section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <canvas id="tokenomicsChart" width="300" height="300"></canvas>
+  </section>
+
+  <section id="how-to-buy">
     <h2>How to Join the Presale</h2>
     <div class="steps">
       <div class="step fade-in delay-1">
@@ -24,7 +55,7 @@
       <div class="step fade-in delay-3">
         <div class="icon">✍️</div>
         <h3>3. Enter Amount</h3>
-        <p>Input the amount and click "Buy". Confirm in wallet.</p>
+        <p>Input the amount and click 'Buy'. Confirm in wallet.</p>
       </div>
       <div class="step fade-in delay-4">
         <div class="icon">📦</div>
@@ -33,5 +64,37 @@
       </div>
     </div>
   </section>
+
+  <footer id="footer">
+    <p>© 2024 Meverse. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('tokenomicsChart').getContext('2d');
+    const tokenomicsChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Presale', 'Staking Rewards', 'Marketing', 'Liquidity', 'Meme Ecosystem'],
+        datasets: [{
+          label: 'Meverse Tokenomics',
+          data: [20, 25, 20, 10, 25],
+          backgroundColor: ['#ffcc00', '#00cc99', '#ff6699', '#3399ff', '#9966ff'],
+          borderColor: '#111',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: 'white'
+            }
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
