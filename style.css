@@ -9,6 +9,7 @@ body {
 }
 .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   background: #1a1a1a;
@@ -18,7 +19,14 @@ body {
 .nav a {
   color: #00ffcc;
   text-decoration: none;
+  font-weight: bold;
 }
 section {
   padding: 40px 20px;
+}
+footer {
+  background: #111;
+  color: #888;
+  text-align: center;
+  padding: 20px;
 }

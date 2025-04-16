@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meverse - Tokenomics</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Meverse - Memes Are Power</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,42 +15,37 @@
         <li><a href="#tokenomics">Tokenomics</a></li>
         <li><a href="#how-to-buy">How to Buy</a></li>
         <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="staking.html">Staking</a></li>
         <li><a href="presale.html">Presale</a></li>
+        <li><a href="referral.html">Referral</a></li>
+        <li><a href="#">Whitepaper</a></li>
+        <li><a href="#footer">Community</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="tokenomics">
-    <h2>Tokenomics</h2>
-    <canvas id="tokenomicsChart" width="300" height="300"></canvas>
+  <section id="home">
+    <h1>MEMES ARE POWER</h1>
+    <p>Welcome to Meverse</p>
   </section>
 
-  <script>
-    const ctx = document.getElementById('tokenomicsChart').getContext('2d');
-    const tokenomicsChart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: ['Presale', 'Staking Rewards', 'Marketing', 'Liquidity', 'Meme Ecosystem'],
-        datasets: [{
-          label: 'Meverse Tokenomics',
-          data: [20, 25, 20, 10, 25],
-          backgroundColor: ['#ffcc00', '#00cc99', '#ff6699', '#3399ff', '#9966ff'],
-          borderColor: '#111',
-          borderWidth: 2
-        }]
-      },
-      options: {
-        responsive: false,
-        plugins: {
-          legend: {
-            position: 'bottom',
-            labels: {
-              color: 'white'
-            }
-          }
-        }
-      }
-    });
-  </script>
+  <section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <p>Presale 20% / Staking Rewards 25% / Marketing 20% / Liquidity 10% / Meme Ecosystem 25%</p>
+  </section>
+
+  <section id="how-to-buy">
+    <h2>How to Join Presale</h2>
+    <p>Step-by-step guide here</p>
+  </section>
+
+  <section id="roadmap">
+    <h2>Roadmap</h2>
+    <p>Q1 ~ Q4 진행 예정</p>
+  </section>
+
+  <footer id="footer">
+    <p>© 2024 Meverse. All rights reserved.</p>
+  </footer>
 </body>
 </html>
