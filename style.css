@@ -5,6 +5,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 .nav {
   display: flex;
@@ -18,44 +19,6 @@ body {
   color: #00ffcc;
   text-decoration: none;
 }
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(-45deg, #ff00cc, #3333ff, #00ffff, #ff6600);
-  background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
-}
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-.hero img {
-  max-width: 200px;
-  margin: 20px 0;
-  animation: bounce 2s infinite;
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-.cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #00ffcc;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-}
 section {
   padding: 40px 20px;
-  text-align: center;
-}
-footer {
-  background: #111;
-  color: #888;
-  text-align: center;
-  padding: 20px;
 }

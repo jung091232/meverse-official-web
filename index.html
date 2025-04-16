@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meverse - Memes Are Power</title>
+  <title>Meverse - Tokenomics</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,46 +21,37 @@
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h1>MEMES ARE POWER</h1>
-    <p>The Meme Revolution Begins with <strong>Meverse</strong></p>
-    <img src="images/memon.png" alt="Memon Character" />
-    <a href="presale.html" class="cta-button">Join Presale</a>
-  </section>
-
   <section id="tokenomics">
     <h2>Tokenomics</h2>
-    <ul>
-      <li>Presale: 20%</li>
-      <li>Staking Rewards: 25%</li>
-      <li>Marketing: 20%</li>
-      <li>Liquidity: 10%</li>
-      <li>Meme Ecosystem: 25%</li>
-    </ul>
+    <canvas id="tokenomicsChart" width="300" height="300"></canvas>
   </section>
 
-  <section id="how-to-buy">
-    <h2>How to Join Presale</h2>
-    <ol>
-      <li>Connect your wallet (MetaMask, TrustWallet, etc)</li>
-      <li>Select token: ETH / BNB / USDT</li>
-      <li>Enter amount and confirm</li>
-      <li>Claim after sale ends</li>
-    </ol>
-  </section>
-
-  <section id="roadmap">
-    <h2>Roadmap</h2>
-    <ul>
-      <li>✅ Q1: Launch Website, Smart Contract</li>
-      <li>✅ Q2: Presale Begins + Referral System</li>
-      <li>🔜 Q3: DEX Listings + MemeTower Launch</li>
-      <li>🔜 Q4: NFT Integration + MemeWorld Expansion</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2024 Meverse. All rights reserved.</p>
-  </footer>
+  <script>
+    const ctx = document.getElementById('tokenomicsChart').getContext('2d');
+    const tokenomicsChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Presale', 'Staking Rewards', 'Marketing', 'Liquidity', 'Meme Ecosystem'],
+        datasets: [{
+          label: 'Meverse Tokenomics',
+          data: [20, 25, 20, 10, 25],
+          backgroundColor: ['#ffcc00', '#00cc99', '#ff6699', '#3399ff', '#9966ff'],
+          borderColor: '#111',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: 'white'
+            }
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
