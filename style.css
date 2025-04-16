@@ -57,18 +57,6 @@ body {
   border-radius: 30px;
   animation: fadeInUp 3s ease-out;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
 .steps {
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +77,28 @@ body {
   font-size: 40px;
   margin-bottom: 10px;
 }
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  padding: 15px;
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+.timeline-point {
+  font-size: 32px;
+}
+.timeline-content h3 {
+  margin: 0 0 5px;
+}
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
@@ -98,6 +108,12 @@ body {
 .delay-2 { animation-delay: 0.6s; }
 .delay-3 { animation-delay: 0.9s; }
 .delay-4 { animation-delay: 1.2s; }
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 footer {
   background: #111;
   color: #888;
