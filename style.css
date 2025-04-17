@@ -3,41 +3,27 @@ body {
   background-color: #0d0d0d;
   color: white;
   font-family: Arial, sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
-.nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  list-style: none;
-  background: #111;
-  padding: 15px 0;
-}
-.nav a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: bold;
-}
-section.referral {
+.claim {
   padding: 60px 20px;
-  max-width: 800px;
-  margin: auto;
 }
-.referral-box {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 30px auto;
+.claim h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
-input#ref-link {
-  width: 60%;
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
+.claim p {
   font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+.form-box {
+  background: #1a1a1a;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 12px;
 }
 button {
   padding: 12px 16px;
@@ -46,41 +32,14 @@ button {
   font-weight: bold;
   background-color: #00ffcc;
   color: #000;
+  margin: 10px;
   cursor: pointer;
 }
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px 0;
+button:hover {
+  opacity: 0.85;
 }
-.stat-card {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  width: 180px;
-}
-.stat-card h2 {
-  margin: 0;
-  font-size: 28px;
+#status {
+  margin-top: 20px;
+  font-size: 14px;
   color: #00ffcc;
-}
-.ref-list {
-  margin-top: 40px;
-}
-.ref-list ul {
-  list-style: none;
-  padding: 0;
-}
-.ref-list li {
-  margin: 6px 0;
-  background: #1a1a1a;
-  padding: 10px;
-  border-radius: 6px;
-}
-footer {
-  background: #111;
-  color: #aaa;
-  padding: 30px 20px;
-  margin-top: 60px;
 }
