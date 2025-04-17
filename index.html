@@ -1,33 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Meverse</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meverse | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<nav><ul class="nav">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#tokenomics">Tokenomics</a></li>
-  <li><a href="#how-to-buy">How to Buy</a></li>
-  <li><a href="#roadmap">Roadmap</a></li>
-  <li><a href="staking.html">Staking</a></li>
-  <li><a href="presale.html">Presale</a></li>
-  <li><a href="referral.html">Referral</a></li>
-  <li><a href="claim.html">Claim</a></li>
-  <li><a href="#">Whitepaper</a></li>
-</ul></nav>
-<section id="home" class="hero">
-  <h1>MEMES ARE POWER</h1>
-  <img src="images/memon.png" alt="Memon" />
-  <p>수많은 밈들 속에서 <strong>Memon</strong>이 중심을 지배한다.</p>
-  <a class="cta-button" href="presale.html">Join Presale</a>
-</section>
-<section id="tokenomics"><h2>Tokenomics</h2><p class="step">Presale 20% / Staking 25% / Marketing 20% / Liquidity 10% / Ecosystem 25%</p></section>
-<section id="how-to-buy"><h2>How to Join</h2><p class="step">1. Connect Wallet → 2. Select Token → 3. Enter Amount → 4. Claim after sale ends</p></section>
-<section id="roadmap"><h2>Roadmap</h2>
-<ul class="step" style="text-align:left;display:inline-block;">
-  <li>Q1 - Launch Website, Smart Contract</li>
-  <li>Q2 - Start Presale, Referral System</li>
-  <li>Q3 - DEX Listings, MemeTower</li>
-  <li>Q4 - NFTs, MemeWorld</li>
-</ul></section>
-<footer id="footer"><p>© 2024 Meverse. All rights reserved.</p></footer>
-</body></html>
+  <div id="particles-js"></div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#howtojoin">How to Join</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="staking.html">Staking</a></li>
+        <li><a href="presale.html">Presale</a></li>
+        <li><a href="referral.html">Referral</a></li>
+        <li><a href="claim.html">Claim</a></li>
+        <li><a href="#whitepaper">Whitepaper</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero" id="hero">
+    <h1>MEMES ARE POWER</h1>
+    <img src="images/memon.png" alt="Memon" />
+    <p>수많은 밈들 속에서 <strong>Memon</strong>이 중심을 지배한다.</p>
+    <button>Join Presale</button>
+  </section>
+  <section id="tokenomics"><h2>Tokenomics</h2><img src="images/tokenomics.gif" /></section>
+  <section id="howtojoin"><h2>How to Join</h2><img src="images/howtojoin.gif" /></section>
+  <section id="roadmap"><h2>Roadmap</h2><img src="images/roadmap.gif" /></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js config loaded');
+    });
+  </script>
+</body>
+</html>

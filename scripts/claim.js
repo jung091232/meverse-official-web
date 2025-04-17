@@ -1,1 +1,1 @@
-console.log("Claim script loaded");
+console.log('Claim script loaded');
