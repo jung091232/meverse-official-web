@@ -211,3 +211,20 @@ input#ref-link {
   background-color: #00ffc3;
   color: #000;
 }
+
+
+body {
+  background: url("images/1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #000;
+}
+
+.presale-card, .claim-section .container, .presale-hero, .section, .hero, .reward-status-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px;
+}
+
+.tower-list {
+  justify-content: flex-start;
+}
