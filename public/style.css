@@ -161,3 +161,35 @@ input#ref-link {
   margin: 15px auto;
   width: fit-content;
 }
+
+.reward-guide {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 15px;
+  color: #ccc;
+  text-align: left;
+}
+.reward-guide ul {
+  padding-left: 20px;
+}
+.reward-guide .example {
+  margin-top: 10px;
+  font-style: italic;
+  color: #00ffc3;
+}
+.reward-status-card {
+  margin-top: 30px;
+  background: rgba(0, 255, 195, 0.05);
+  padding: 20px;
+  border: 1px solid #00ffc3;
+  border-radius: 12px;
+}
+.status-pass {
+  color: #00ff00;
+  font-weight: bold;
+}
+.status-fail {
+  color: #ff6060;
+  font-weight: bold;
+}

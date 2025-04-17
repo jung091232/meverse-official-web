@@ -23,6 +23,27 @@
         <p>🔢 Referred: <span id="ref-count">0</span> people</p>
         <p>💰 Estimated Reward: <span id="ref-reward">0</span> MVS</p>
       </div>
+
+      <div class="reward-guide">
+        <h3>📘 Referral Reward Rules</h3>
+        <ul>
+          <li>✅ $300 이상 직접 구매해야 보상 자격이 생깁니다.</li>
+          <li>✅ 추천 수 10명 이상부터 보상이 적용됩니다.</li>
+          <li>📈 추천 수가 많을수록 보상률이 증가합니다.</li>
+        </ul>
+        <p class="example">예시: 내가 $500 구매하고 25명을 추천하여 $2000 구매가 발생했다면 → <strong>6% 보상 = $120</strong></p>
+      </div>
+
+      <div class="reward-status-card">
+        <h3>📊 My Reward Status</h3>
+        <p>🔢 추천인 수: <span id="ref-count">0</span></p>
+        <p>💸 내 구매 금액: <span id="my-purchase">$0</span></p>
+        <p>📦 추천된 총 구매 금액: <span id="total-referred">$0</span></p>
+        <p>🎯 적용 보상률: <span id="reward-rate">0%</span></p>
+        <p>💰 예상 보상 금액: <span id="reward-estimate">$0</span></p>
+        <p id="reward-status" class="status-fail">❌ 보상 조건 미충족</p>
+      </div>
+
       <div class="tower">
         <p class="tower-title">Referral Tower</p>
         <div id="ref-list" class="tower-list"></div>
@@ -32,9 +53,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('particles.js loaded');
-    });
+    particlesJS.load('particles-js', 'particles.json');
   </script>
   <script src="scripts/referral.js"></script>
 </body>
