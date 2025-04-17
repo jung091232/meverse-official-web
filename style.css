@@ -1,45 +1,64 @@
 
+* { box-sizing: border-box; }
 body {
   background-color: #0d0d0d;
   color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+nav {
+  background: #111;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
-.claim {
-  padding: 60px 20px;
-}
-.claim h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-.claim p {
-  font-size: 16px;
-  color: #cccccc;
-  margin-bottom: 30px;
-}
-.form-box {
-  background: #1a1a1a;
-  display: inline-block;
-  padding: 30px;
-  border-radius: 12px;
-}
-button {
-  padding: 12px 16px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  background-color: #00ffcc;
-  color: #000;
-  margin: 10px;
-  cursor: pointer;
-}
-button:hover {
-  opacity: 0.85;
-}
-#status {
-  margin-top: 20px;
-  font-size: 14px;
+.nav a {
   color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+.hero {
+  background: radial-gradient(circle at center, #1a1a1a, #000);
+}
+.hero img {
+  width: 260px;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 25px gold);
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #00ffcc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+}
+footer {
+  background: #111;
+  text-align: center;
+  padding: 30px 20px;
+  color: #aaa;
 }

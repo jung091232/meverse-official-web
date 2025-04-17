@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meverse - Full Menu Fixed</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <title>Meverse - CSS Fix</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -19,71 +18,21 @@
         <li><a href="staking.html">Staking</a></li>
         <li><a href="presale.html">Presale</a></li>
         <li><a href="referral.html">Referral</a></li>
+        <li><a href="claim.html">Claim</a></li>
         <li><a href="#">Whitepaper</a></li>
-        <li><a href="#footer">Community</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="hero">
+  <section class="hero" id="home">
     <h1>MEMES ARE POWER</h1>
     <img src="images/memon.png" alt="Memon" />
     <p>수많은 밈들 속에서 <strong>Memon</strong>이 중심을 지배한다.</p>
     <a class="cta-button" href="presale.html">Join Presale</a>
   </section>
 
-  <section id="tokenomics">
-    <h2>Tokenomics</h2>
-    <canvas id="tokenomicsChart" width="300" height="300"></canvas>
-  </section>
-
-  <section id="how-to-buy">
-    <h2>How to Join Presale</h2>
-    <div class="steps">
-      <div class="step"><h3>1. Connect Wallet</h3><p>Use MetaMask or TrustWallet.</p></div>
-      <div class="step"><h3>2. Select Token</h3><p>Choose ETH, BNB, or USDT.</p></div>
-      <div class="step"><h3>3. Enter Amount</h3><p>Input amount and confirm.</p></div>
-      <div class="step"><h3>4. Claim</h3><p>Receive $MVS after sale ends.</p></div>
-    </div>
-  </section>
-
-  <section id="roadmap">
-    <h2>Roadmap</h2>
-    <div class="timeline">
-      <div class="timeline-item"><strong>Q1:</strong> Launch Website, Smart Contract</div>
-      <div class="timeline-item"><strong>Q2:</strong> Presale + Referral System</div>
-      <div class="timeline-item"><strong>Q3:</strong> DEX Listing, MemeTower</div>
-      <div class="timeline-item"><strong>Q4:</strong> NFTs + MemeWorld</div>
-    </div>
-  </section>
-
-  <footer id="footer">
+  <footer>
     <p>© 2024 Meverse. All rights reserved.</p>
   </footer>
-
-  <script>
-    const ctx = document.getElementById('tokenomicsChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: ['Presale', 'Staking Rewards', 'Marketing', 'Liquidity', 'Meme Ecosystem'],
-        datasets: [{
-          data: [20, 25, 20, 10, 25],
-          backgroundColor: ['#ffcc00', '#00cc99', '#ff6699', '#3399ff', '#9966ff'],
-          borderColor: '#111',
-          borderWidth: 2
-        }]
-      },
-      options: {
-        responsive: false,
-        plugins: {
-          legend: {
-            position: 'bottom',
-            labels: { color: 'white' }
-          }
-        }
-      }
-    });
-  </script>
 </body>
 </html>
