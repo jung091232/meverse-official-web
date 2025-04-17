@@ -211,3 +211,43 @@ input#ref-link {
   background-color: #00ffc3;
   color: #000;
 }
+
+
+/* 📏 PC 최적화 레이아웃 확대 */
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.presale-card, .claim-section .container, .presale-hero, .section, .hero, .reward-status-card {
+  max-width: 1400px;
+  width: 95%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+/* 🧭 상위 메뉴 스타일 개선 */
+.nav-bar ul {
+  gap: 20px;
+}
+.nav-bar ul li a {
+  font-size: 18px;
+  padding: 10px 16px;
+}
+
+/* 💬 텍스트 사이즈 확대 */
+.wallet-box,
+.ref-info,
+.reward-guide,
+.reward-status-card,
+.presale-hero p,
+.section p {
+  font-size: 18px;
+}
+
+.reward-status-card p,
+.reward-guide ul li,
+.reward-guide p,
+.ref-info p {
+  font-size: 18px;
+}
