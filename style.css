@@ -156,3 +156,8 @@ input#ref-link {
   border: 1px solid #00ffc3;
   font-family: monospace;
 }
+
+.qrcode-box {
+  margin: 15px auto;
+  width: fit-content;
+}

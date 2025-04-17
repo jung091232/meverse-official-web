@@ -6,7 +6,13 @@ function connectWallet() {
     ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
       account = accounts[0];
       document.getElementById("wallet-address").innerText = "Wallet: " + account;
-      document.getElementById("ref-link").value = "https://meverse.one/?ref=" + account;
+      const refLink = "https://meverse.one/?ref=" + account;
+      document.getElementById("ref-link").value = refLink;
+      new QRCode(document.getElementById("qrcode"), {
+        text: refLink,
+        width: 128,
+        height: 128
+      });
       simulateReferralData();
     });
   } else {
