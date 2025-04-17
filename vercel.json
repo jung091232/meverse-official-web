@@ -1,1 +1,8 @@
-{ "rewrites": [ { "source": "/presale", "destination": "/presale.html" }, { "source": "/referral", "destination": "/referral.html" }, { "source": "/admin", "destination": "/admin.html" } ] }
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    }
+  ]
+}
