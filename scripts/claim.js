@@ -1,0 +1,1 @@
+console.log("Claim script loaded");
