@@ -117,3 +117,42 @@ header {
   font-size: 16px;
   color: #00ff90;
 }
+
+.ref-info {
+  margin-top: 20px;
+  text-align: left;
+  color: #00ffc3;
+  font-size: 16px;
+}
+input#ref-link {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #00ffc3;
+  background: #111;
+  color: #0f0;
+  font-family: monospace;
+}
+.tower {
+  margin-top: 30px;
+}
+.tower-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff700;
+}
+.tower-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.ref-box {
+  background: #222;
+  color: #00ffc3;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #00ffc3;
+  font-family: monospace;
+}
