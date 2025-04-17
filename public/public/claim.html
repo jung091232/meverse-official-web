@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meverse | Claim</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <section class="presale-hero">
+    <h1>🎁 Claim Your Tokens</h1>
+    <p>Check your purchased amount and claim your MVS tokens.</p>
+    <div class="presale-card">
+      <button onclick="connectWallet()" class="cta-button">🔌 Connect Wallet</button>
+      <p id="wallet-address" class="wallet-box">Wallet: Not Connected</p>
+      <p id="purchased" class="wallet-box">Purchased: 0 MVS</p>
+      <button onclick="claimTokens()" class="cta-button">✅ Claim Tokens</button>
+      <p id="status" class="status-text"></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js loaded');
+    });
+  </script>
+  <script src="scripts/claim.js"></script>
+</body>
+</html>

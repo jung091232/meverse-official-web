@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meverse | Referral</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <section class="presale-hero">
+    <h1>🧬 Referral Tower</h1>
+    <p>Invite your friends and climb the Meme Tower!</p>
+    <div class="presale-card">
+      <button onclick="connectWallet()" class="cta-button">🔌 Connect Wallet</button>
+      <p id="wallet-address" class="wallet-box">Wallet: Not Connected</p>
+      <p class="wallet-box">Referral Link:</p>
+      <input type="text" id="ref-link" readonly value="https://meverse.one/?ref=0x0000" />
+      <button onclick="copyLink()" class="cta-button">🔗 Copy Link</button>
+      <div id="qrcode" class="qrcode-box"></div>
+      <div class="ref-info">
+        <p>🔢 Referred: <span id="ref-count">0</span> people</p>
+        <p>💰 Estimated Reward: <span id="ref-reward">0</span> MVS</p>
+      </div>
+
+      
+<div class="reward-guide">
+  <h3>📘 Referral Reward Rules</h3>
+  <ul>
+    <li>✅ 본인 <strong>$300 이상</strong> 직접 구매해야 보상 자격이 생깁니다.</li>
+    <li>✅ 추천 수 <strong>10명 이상</strong>부터 보상이 적용됩니다.</li>
+    <li>📌 <strong>보상은 추천인의 구매 금액</strong>을 기준으로 계산됩니다.</li>
+    <li>📌 <strong>본인 구매 금액 최대 $2,000까지</strong> 페이백 받을 수 있습니다.</li>
+    <li>📈 추천 수가 많을수록 보상률이 증가합니다.</li>
+    <li>💡 <strong>추천인 11명부터 5%</strong> 보상이 발생하며, 이후 단계별로 증가합니다.</li>
+  </ul>
+  <p class="example">예시: 내가 <strong>$500</strong> 구매하고 <strong>25명</strong>을 추천하여 <strong>$2000</strong> 구매가 발생했다면 → <strong>6% 보상 = $120</strong></p>
+
+  <table class="reward-table">
+    <thead>
+      <tr>
+        <th>추천 수</th>
+        <th>보상률</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>10~20명</td><td>5%</td></tr>
+      <tr><td>21~30명</td><td>6%</td></tr>
+      <tr><td>31~40명</td><td>7%</td></tr>
+      <tr><td>41~50명</td><td>8%</td></tr>
+      <tr><td>51~60명</td><td>9%</td></tr>
+      <tr><td>61~100명</td><td>10%</td></tr>
+      <tr><td>101명 이상</td><td>15%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+        <h3>📘 Referral Reward Rules</h3>
+        <ul>
+          <li>✅ $300 이상 직접 구매해야 보상 자격이 생깁니다.</li>
+          <li>✅ 추천 수 10명 이상부터 보상이 적용됩니다.</li>
+          <li>📈 추천 수가 많을수록 보상률이 증가합니다.</li>
+        </ul>
+        <p class="example">예시: 내가 $500 구매하고 25명을 추천하여 $2000 구매가 발생했다면 → <strong>6% 보상 = $120</strong></p>
+      </div>
+
+      <div class="reward-status-card">
+        <h3>📊 My Reward Status</h3>
+        <p>🔢 추천인 수: <span id="ref-count">0</span></p>
+        <p>💸 내 구매 금액: <span id="my-purchase">$0</span></p>
+        <p>📦 추천된 총 구매 금액: <span id="total-referred">$0</span></p>
+        <p>🎯 적용 보상률: <span id="reward-rate">0%</span></p>
+        <p>💰 예상 보상 금액: <span id="reward-estimate">$0</span></p>
+        <p id="reward-status" class="status-fail">❌ 보상 조건 미충족</p>
+      </div>
+
+      <div class="tower">
+        <p class="tower-title">Referral Tower</p>
+        <div id="ref-list" class="tower-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json');
+  </script>
+  <script src="scripts/referral.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 0;
+}
+.nav-bar ul li {
+  margin: 0 15px;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #00ffc3;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.nav-bar ul li a:hover {
+  color: #fff700;
+}
+.hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 180px 20px 100px;
+}
+.hero img {
+  width: 200px;
+  animation: float 3s ease-in-out infinite;
+}
+.cta-button {
+  display: inline-block;
+  background: #00ffc3;
+  color: #000;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffc3;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background: #fff700;
+  box-shadow: 0 0 20px #fff700;
+}
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+.section img {
+  max-width: 90%;
+  height: auto;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.presale-hero {
+  position: relative;
+  z-index: 1;
+  padding: 160px 20px;
+  text-align: center;
+}
+.presale-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffc3;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px #00ffc3;
+}
+.presale-card input[type="number"] {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #00ffc3;
+  border-radius: 8px;
+  margin: 20px 0;
+  background-color: #0e0e0e;
+  color: #fff;
+  font-size: 16px;
+}
+.wallet-box {
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-family: monospace;
+}
+.status-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #00ff90;
+}
+
+.ref-info {
+  margin-top: 20px;
+  text-align: left;
+  color: #00ffc3;
+  font-size: 16px;
+}
+input#ref-link {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #00ffc3;
+  background: #111;
+  color: #0f0;
+  font-family: monospace;
+}
+.tower {
+  margin-top: 30px;
+}
+.tower-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff700;
+}
+.tower-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.ref-box {
+  background: #222;
+  color: #00ffc3;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #00ffc3;
+  font-family: monospace;
+}
+
+.qrcode-box {
+  margin: 15px auto;
+  width: fit-content;
+}
+
+.reward-guide {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 15px;
+  color: #ccc;
+  text-align: left;
+}
+.reward-guide ul {
+  padding-left: 20px;
+}
+.reward-guide .example {
+  margin-top: 10px;
+  font-style: italic;
+  color: #00ffc3;
+}
+.reward-status-card {
+  margin-top: 30px;
+  background: rgba(0, 255, 195, 0.05);
+  padding: 20px;
+  border: 1px solid #00ffc3;
+  border-radius: 12px;
+}
+.status-pass {
+  color: #00ff00;
+  font-weight: bold;
+}
+.status-fail {
+  color: #ff6060;
+  font-weight: bold;
+}
+
+.reward-table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid #00ffc3;
+}
+.reward-table th, .reward-table td {
+  padding: 10px;
+  border: 1px solid #00ffc3;
+}
+.reward-table th {
+  background-color: #00ffc3;
+  color: #000;
+}
+
+
+/* 📏 PC 최적화 레이아웃 확대 */
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.presale-card, .claim-section .container, .presale-hero, .section, .hero, .reward-status-card {
+  max-width: 1400px;
+  width: 95%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+/* 🧭 상위 메뉴 스타일 개선 */
+.nav-bar ul {
+  gap: 20px;
+}
+.nav-bar ul li a {
+  font-size: 18px;
+  padding: 10px 16px;
+}
+
+/* 💬 텍스트 사이즈 확대 */
+.wallet-box,
+.ref-info,
+.reward-guide,
+.reward-status-card,
+.presale-hero p,
+.section p {
+  font-size: 18px;
+}
+
+.reward-status-card p,
+.reward-guide ul li,
+.reward-guide p,
+.ref-info p {
+  font-size: 18px;
+}
+
+.tokenomics-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.tokenomics-chart img {
+  width: 400px;
+  animation: tokenPulse 1s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00ffc3;
+}
+
+.tokenomics-list {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tokenomics-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tokenomics-list li {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  border-left: 5px solid #00ffc3;
+  border-radius: 10px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.tokenomics-list li:nth-child(1) { animation-delay: 0.1s; }
+.tokenomics-list li:nth-child(2) { animation-delay: 0.2s; }
+.tokenomics-list li:nth-child(3) { animation-delay: 0.3s; }
+.tokenomics-list li:nth-child(4) { animation-delay: 0.4s; }
+.tokenomics-list li:nth-child(5) { animation-delay: 0.5s; }
+.tokenomics-list li:nth-child(6) { animation-delay: 0.6s; }
+.tokenomics-list li:nth-child(7) { animation-delay: 0.7s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tokenPulse {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.howto-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.step {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffc3;
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 280px;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpStep 0.6s ease-out forwards;
+}
+.step:nth-child(1) { animation-delay: 0.1s; }
+.step:nth-child(2) { animation-delay: 0.2s; }
+.step:nth-child(3) { animation-delay: 0.3s; }
+.step:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUpStep {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
