@@ -1,7 +1,5 @@
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 body {
   background-color: #0d0d0d;
   color: white;
