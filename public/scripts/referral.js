@@ -8,11 +8,15 @@ function connectWallet() {
       document.getElementById("wallet-address").innerText = "Wallet: " + account;
       const refLink = "https://meverse.one/?ref=" + account;
       document.getElementById("ref-link").value = refLink;
-      new QRCode(document.getElementById("qrcode"), {
+
+      const qrContainer = document.getElementById("qrcode");
+      qrContainer.innerHTML = ""; // ✅ 중복 방지 위해 초기화
+      new QRCode(qrContainer, {
         text: refLink,
         width: 128,
         height: 128
       });
+
       simulateReferralData();
     });
   } else {
