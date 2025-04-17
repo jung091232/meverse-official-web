@@ -193,3 +193,21 @@ input#ref-link {
   color: #ff6060;
   font-weight: bold;
 }
+
+.reward-table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid #00ffc3;
+}
+.reward-table th, .reward-table td {
+  padding: 10px;
+  border: 1px solid #00ffc3;
+}
+.reward-table th {
+  background-color: #00ffc3;
+  color: #000;
+}
