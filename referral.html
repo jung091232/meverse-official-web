@@ -1,1 +1,60 @@
-<!DOCTYPE html><html><head><title>Referral</title><link rel='stylesheet' href='style.css'></head><body><h1>Referral Page</h1><p>Your referral code: 0x0000...0000</p></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meverse - Referral Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="referral.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#tokenomics">Tokenomics</a></li>
+        <li><a href="index.html#how-to-buy">How to Buy</a></li>
+        <li><a href="index.html#roadmap">Roadmap</a></li>
+        <li><a href="staking.html">Staking</a></li>
+        <li><a href="presale.html">Presale</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="referral">
+    <h1>🎁 My Referral Dashboard</h1>
+    <p>Share your unique link and earn rewards every time someone joins.</p>
+
+    <div class="referral-box">
+      <input id="ref-link" type="text" value="https://meverse.one/?ref=0x0000...0000" readonly />
+      <button onclick="copyReferral()">📋 Copy</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h2>👥 12</h2>
+        <p>People Referred</p>
+      </div>
+      <div class="stat-card">
+        <h2>💰 850 MVS</h2>
+        <p>Total Rewards</p>
+      </div>
+    </div>
+
+    <div class="ref-list">
+      <h3>🧾 Referred Wallets</h3>
+      <ul>
+        <li>0xa3c4...b92F</li>
+        <li>0x1fE2...09C3</li>
+        <li>0xF92a...A8eD</li>
+        <li>0x3D16...2dAc</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Meverse. All rights reserved.</p>
+  </footer>
+</body>
+</html>
