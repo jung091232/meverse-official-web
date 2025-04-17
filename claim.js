@@ -3,22 +3,9 @@ let web3;
 let contract;
 const contractAddress = "0x175aA06A06382034188bC95844762bc840ecB4de";
 const abi = [
-  {
-    "inputs": [],
-    "name": "claimTokens",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "getMyPurchase",
-    "outputs": [{"internalType": "uint256","name":"","type":"uint256"}],
-    "stateMutability": "view",
-    "type": "function"
-  }
+  { "inputs": [], "name": "claimTokens", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
+  { "inputs": [], "name": "getMyPurchase", "outputs": [{"internalType": "uint256","name":"","type":"uint256"}], "stateMutability": "view", "type": "function" }
 ];
-
 async function connectWallet() {
   if (window.ethereum) {
     web3 = new Web3(window.ethereum);
@@ -29,7 +16,6 @@ async function connectWallet() {
     alert("Please install MetaMask");
   }
 }
-
 async function getBalance() {
   const accounts = await web3.eth.getAccounts();
   try {
@@ -39,7 +25,6 @@ async function getBalance() {
     document.getElementById("status").innerText = "❌ Error fetching balance";
   }
 }
-
 async function claimTokens() {
   const accounts = await web3.eth.getAccounts();
   try {
